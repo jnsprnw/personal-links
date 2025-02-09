@@ -10,6 +10,12 @@
 	const updated = $derived(new Intl.DateTimeFormat('en-GB').format(data.links.updated));
 </script>
 
+<svelte:head>
+	{#each data.links.links_grouped.social as { url }}
+		<link rel="me" href={url} />
+	{/each}
+</svelte:head>
+
 <main class="flex w-full max-w-96 flex-col gap-y-8 p-2">
 	<header class="flex flex-col text-center">
 		<h1 class="text-mute decoration-marker text-xl font-bold underline">Jonas Parnow</h1>
