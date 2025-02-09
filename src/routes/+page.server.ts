@@ -1,3 +1,4 @@
+import { dev } from '$app/environment';
 import { getLinks } from '$lib/pocketbase/pocketbase';
 
 export async function load() {
