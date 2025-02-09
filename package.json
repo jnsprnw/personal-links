@@ -36,6 +36,7 @@
     "@types/bun": "latest"
   },
   "dependencies": {
+    "@sveltejs/adapter-cloudflare": "^5.0.2",
     "pocketbase": "^0.25.1"
   },
   "module": "index.ts"
