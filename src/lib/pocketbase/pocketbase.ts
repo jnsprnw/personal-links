@@ -1,7 +1,12 @@
 import PocketBase from 'pocketbase';
 // import { TypedPocketBase } from '../src/types/pocketbase-types';
 
-const client = new PocketBase(Bun.env.POCKETBASE_URL); // as TypedPocketBase;
+const url = Bun.env.POCKETBASE_URL;
+if (!url) {
+	throw new Error('POCKETBASE_URL not set');
+}
+
+const client = new PocketBase(url); // as TypedPocketBase;
 client.autoCancellation(false);
 
 async function getCollection(collection: string) {
