@@ -10,7 +10,7 @@
 	const updated = $derived(new Intl.DateTimeFormat('en-GB').format(data.links.updated));
 </script>
 
-<main class="flex w-full max-w-72 flex-col gap-y-5">
+<main class="flex w-full max-w-96 flex-col gap-y-8 p-2">
 	<header class="flex flex-col text-center">
 		<h1 class="text-mute decoration-marker text-xl font-bold underline">Jonas Parnow</h1>
 		<span class="text-mute">Designer for Information and Data</span>
@@ -35,7 +35,7 @@
 	</section>
 	<section>
 		<h2 class="text-mute text-xs">Profiles</h2>
-		<ul class="mt-2 flex flex-wrap gap-x-2 gap-y-3">
+		<ul class="mt-2 flex flex-wrap gap-x-2 gap-y-4">
 			{#each data.links.links_grouped.social as { label, url }}
 				<li>
 					<a
