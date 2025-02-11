@@ -28,6 +28,6 @@
 	<link rel="canonical" href={SITE_URL} />
 </svelte:head>
 
-<div class="flex h-screen w-screen items-center justify-center">
+<div class="flex h-screen w-screen items-center justify-center bg-white dark:bg-gray-900">
 	{@render children()}
 </div>
