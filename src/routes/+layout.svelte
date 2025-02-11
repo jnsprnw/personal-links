@@ -26,6 +26,9 @@
 	<meta itemprop="description" content={SITE_DESCRIPTION} />
 
 	<link rel="canonical" href={SITE_URL} />
+
+	<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+	<meta name="theme-color" content="#101828" media="(prefers-color-scheme: dark)" />
 </svelte:head>
 
 <div class="flex h-screen w-screen items-center justify-center bg-white dark:bg-gray-900">
