@@ -9,7 +9,13 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			$types: 'src/types.ts'
+		},
+		version: {
+			name: process.env.npm_package_version
+		}
 	}
 };
 
