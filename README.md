@@ -7,9 +7,6 @@ Inspired by [linktr.ee](https://linktr.ee/), this project aims to provide a simp
 Once you've created a project and installed dependencies with `bun install`, start a development server:
 
 ```bash
-make dev
-
-# or start the server and open the app in a new browser tab
 bun run dev
 ```
 
