@@ -1,6 +1,6 @@
 # Personal Links
 
-Inspired by https://linktr.ee/, this project aims to provide a simple and customizable way to create a personal links page using SvelteKit and Pocketbase. Find my list on [links.jonasparnow.com](https://links.jonasparnow.com/).
+Inspired by [linktr.ee](https://linktr.ee/), this project aims to provide a simple and customizable way to create a personal links page using SvelteKit and Pocketbase. Find my list on [links.jonasparnow.com](https://links.jonasparnow.com/).
 
 ## Developing
 
