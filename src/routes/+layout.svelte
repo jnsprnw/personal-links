@@ -31,6 +31,6 @@
 	<meta name="theme-color" content="#101828" media="(prefers-color-scheme: dark)" />
 </svelte:head>
 
-<div class="flex h-screen w-screen items-center justify-center bg-white dark:bg-gray-900">
+<div class="flex min-h-screen w-screen items-center justify-center bg-white dark:bg-gray-900">
 	{@render children()}
 </div>
