@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	let { children } = $props();
+	const { children } = $props();
 
 	const SITE_TITLE = 'Jonas Parnow: Links';
 	const SITE_URL = 'https://links.jonasparnow.com';
