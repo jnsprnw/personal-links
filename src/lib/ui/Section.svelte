@@ -3,7 +3,7 @@
 	import type { Snippet } from 'svelte';
 	import type { Link } from '$types';
 
-	const { links, list, title }: { links: Link[]; list: Snippet; title: string } = $props();
+	const { links, list, title }: { links: Link[]; list: Snippet<[Link[]]>; title: string } = $props();
 </script>
 
 <section>

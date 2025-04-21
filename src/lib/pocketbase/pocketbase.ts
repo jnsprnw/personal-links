@@ -17,7 +17,7 @@ async function getCollection(collection: string) {
 }
 
 function getLastUpdated(collection: LinksRecord[]): Date {
-	return new Date(Math.max(...collection.map(({ updated }) => new Date(updated!).getTime())));
+	return new Date(Math.max(...collection.map(({ updated }) => new Date(updated || new Date()).getTime())));
 }
 
 export async function getLinks() {
