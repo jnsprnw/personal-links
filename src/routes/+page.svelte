@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Header from '$lib/ui/Header.svelte';
-	import Social from '$lib/lists/Social.svelte';
 	import Regular from '$lib/lists/Regular.svelte';
+	import Social from '$lib/lists/Social.svelte';
+	import Header from '$lib/ui/Header.svelte';
 	import Section from '$lib/ui/Section.svelte';
 	import type { Link } from '$types';
 
@@ -22,12 +22,12 @@
 </script>
 
 <svelte:head>
-	{#each links_social as { url }}
+	{#each links_social as { url } (url)}
 		<link rel="me" href={url} />
 	{/each}
 </svelte:head>
 
-<main class="flex w-full max-w-96 flex-col gap-y-8 p-2 text-black dark:text-gray-100">
+<main class="my-3 flex w-full max-w-96 flex-col gap-y-8 p-2 text-black dark:text-gray-100">
 	<Header date={data.links.updated} />
 
 	<Section title="Links" links={links_regular}>

@@ -1,5 +1,5 @@
 import PocketBase from 'pocketbase';
-import type { TypedPocketBase, LinksRecord } from './types';
+import type { LinksRecord, TypedPocketBase } from './types';
 
 const url = Bun.env.POCKETBASE_URL;
 if (!url) {
@@ -17,7 +17,9 @@ async function getCollection(collection: string) {
 }
 
 function getLastUpdated(collection: LinksRecord[]): Date {
-	return new Date(Math.max(...collection.map(({ updated }) => new Date(updated || new Date()).getTime())));
+	return new Date(
+		Math.max(...collection.map(({ updated }) => new Date(updated || new Date()).getTime()))
+	);
 }
 
 export async function getLinks() {

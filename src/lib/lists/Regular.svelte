@@ -5,7 +5,7 @@
 </script>
 
 <ul class="flex flex-col gap-y-3">
-	{#each links as { label, description, url }}
+	{#each links as { label, description, url } (url)}
 		<li>
 			<a
 				class="border-border hover:border-blue block rounded-sm border p-3 transition-colors dark:border-gray-600 dark:hover:border-blue-300"
